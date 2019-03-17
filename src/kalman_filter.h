@@ -40,7 +40,6 @@ class KalmanFilter {
    */
   void Update(const Eigen::VectorXd &z);
 
-  VectorXd CartesianToPolar(const Eigen::VectorXd &x_state);
   /**
    * Updates the state by using Extended Kalman Filter equations
    * @param z The measurement at k+1

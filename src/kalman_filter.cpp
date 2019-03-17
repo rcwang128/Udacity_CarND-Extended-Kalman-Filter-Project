@@ -51,7 +51,7 @@ void KalmanFilter::Update(const VectorXd &z) {
   P_ = (I - K * H_) * P_;
 }
 
-VectorXd KalmanFilter::CartesianToPolar(const VectorXd &x_state){
+VectorXd CartesianToPolar(const VectorXd &x_state){
   double px, py, vx, vy;
   px = x_state(0);
   py = x_state(1);
